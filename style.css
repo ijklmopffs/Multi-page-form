@@ -1,0 +1,369 @@
+* {
+  font-family: "Ubuntu", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: hsl(206, 94%, 87%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main {
+  background-color: white;
+  border-radius: 7px;
+  padding: 1rem;
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+}
+.first {
+  position: relative;
+}
+.steps {
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.step_one {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.number {
+  background-color: hsl(228, 100%, 84%);
+  border-radius: 50%;
+  padding: 0.8rem;
+  border: 1px solid white;
+  color: white;
+  font-weight: 700;
+}
+.transparent {
+  background-color: transparent;
+}
+.step_details {
+  text-transform: uppercase;
+}
+.step_details p {
+  color: hsl(229, 24%, 87%);
+  font-weight: 400;
+}
+.step_details span {
+  color: white;
+  font-weight: 500;
+}
+.second {
+  padding: 2rem;
+  height: 90vh;
+}
+.second h1 {
+  color: hsl(213, 96%, 18%);
+  font-size: 2.5rem;
+}
+.second_text p,
+.second_step_text p {
+  color: hsl(231, 11%, 63%);
+  margin-top: 1rem;
+}
+.second-form {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+.second_input {
+  display: flex;
+  flex-direction: column;
+  color: hsl(213, 96%, 18%);
+  font-weight: 500;
+  position: relative;
+}
+.second_input input {
+  padding: 1rem;
+  border-radius: 7px;
+  border: 1px solid hsl(229, 24%, 87%);
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: hsl(213, 96%, 18%);
+}
+.second_input input:focus {
+  outline: none;
+  border: 1px solid hsl(243, 100%, 62%);
+}
+.second_input input::placeholder {
+  color: hsl(229, 24%, 87%);
+  font-weight: 500;
+}
+.button {
+  display: flex;
+  flex-direction: row-reverse;
+}
+button {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 7px;
+  background-color: hsl(213, 96%, 18%);
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+  line-height: 2;
+  margin-top: 5rem;
+}
+small {
+  color: hsl(354, 84%, 57%);
+  position: absolute;
+  left: 70%;
+  font-weight: bolder;
+  visibility: hidden;
+}
+.options {
+  cursor: pointer;
+  display: flex;
+  gap: 1rem;
+}
+.options_arcade {
+  margin-top: 3rem;
+  border: 1px solid hsl(229, 24%, 87%);
+  padding: 1rem;
+  padding-right: 0;
+  width: 100px;
+  border-radius: 7px;
+}
+.options_arcade:hover {
+  border-color: hsl(243, 100%, 62%);
+}
+.options_arcade_text {
+  margin-top: 3rem;
+}
+.game_name {
+  color: hsl(213, 96%, 18%);
+  font-weight: 700;
+  font-size: 1rem;
+}
+.game_price {
+  color: hsl(229, 24%, 87%);
+  font-weight: 500;
+}
+
+.options_selector {
+  display: flex;
+  margin-top: 2rem;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(229, 24%, 87%);
+  padding: 0.5rem;
+  gap: 1rem;
+  border-radius: 7px;
+}
+
+.toggle-button {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 15px;
+}
+
+.toggle-checkbox {
+  display: none;
+}
+
+.toggle-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(213, 96%, 18%);
+  border-radius: 34px;
+  cursor: pointer;
+}
+
+.toggle-label:before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.2s;
+}
+
+.toggle-checkbox:checked + .toggle-label:before {
+  transform: translateX(30px);
+}
+.monthly,
+.yearly {
+  color: hsl(231, 11%, 63%);
+  font-weight: 700;
+}
+.yearly_free {
+  color: hsl(213, 96%, 18%);
+  font-weight: 500;
+}
+.second_step_nav {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.second_step_nav p {
+  color: hsl(231, 11%, 63%);
+  font-weight: 700;
+  cursor: pointer;
+}
+.second_step_nav_button {
+  margin-top: 0;
+}
+.options_first {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  padding: 1rem;
+  border: 1px solid hsl(229, 24%, 87%);
+  border-radius: 7px;
+  cursor: pointer;
+}
+.options_first:hover {
+  border: 1px solid hsl(243, 100%, 62%);
+}
+.options_first input {
+  cursor: pointer;
+}
+.third_options {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  gap: 2rem;
+}
+.online {
+  color: hsl(213, 96%, 18%);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.access {
+  color: hsl(231, 11%, 63%);
+  font-weight: 500;
+  margin-top: 0.3rem;
+}
+.extra {
+  color: hsl(243, 100%, 62%);
+}
+.checkout {
+  margin-top: 5rem;
+  background-color: hsl(206, 94%, 87%);
+  border-radius: 7px;
+  padding: 1rem;
+}
+.game_details {
+  display: flex;
+  justify-content: space-between;
+}
+.fourth_text,
+.fourth_text_first {
+  color: hsl(213, 96%, 18%);
+  font-weight: 700;
+}
+.line {
+  width: 100%;
+  background-color: hsl(231, 11%, 63%);
+  height: 1px;
+  margin-top: 2rem;
+  border: none;
+}
+.add_ons,
+.more {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.extrass,
+.total {
+  color: hsl(231, 11%, 63%);
+}
+.onlineee {
+  color: hsl(213, 96%, 18%);
+}
+.checkout_pricing {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.total_price {
+  color: hsl(213, 96%, 18%);
+  font-size: 2rem;
+  font-weight: 500;
+}
+.fifth_step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 70vh;
+  gap: 2rem;
+  width: 330px;
+}
+.fifth_step p {
+  color: hsl(231, 11%, 63%);
+}
+.none {
+  display: none;
+}
+.mobile {
+  display: none;
+}
+@media (max-width: 600px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+    width: 100%;
+  }
+  .second {
+    height: 60vh;
+  }
+  .first {
+    width: 100%;
+  }
+  main {
+    flex-direction: column;
+    padding: 0;
+    gap: 0;
+  }
+  .steps {
+    flex-direction: row;
+    left: 22%;
+    top: 40%;
+  }
+  .step_details {
+    display: none;
+  }
+  .options {
+    flex-direction: column;
+  }
+  .options_arcade {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  .options_arcade_text {
+    margin-top: 0;
+  }
+  .fifth_step {
+    width: 325px;
+  }
+}
